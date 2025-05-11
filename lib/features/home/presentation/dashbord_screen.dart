@@ -1,11 +1,17 @@
 import 'package:border/features/home/presentation/widgets/datewidget.dart';
 import 'package:border/features/home/presentation/widgets/order_item.dart';
+import 'package:border/features/order/presentation/create_order_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DashbordScreen extends StatelessWidget {
+class DashbordScreen extends StatefulWidget {
   const DashbordScreen({super.key});
 
+  @override
+  State<DashbordScreen> createState() => _DashbordScreenState();
+}
+
+class _DashbordScreenState extends State<DashbordScreen> {
   // Generate dummy orders
   List<OrderData> _getDummyOrders() {
     return [
@@ -105,6 +111,25 @@ class DashbordScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      // Add this to imports
+
+      // Add this button to your scaffold
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          final result = await Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CreateOrderScreen()),
+          );
+
+          if (result == true) {
+            // Refresh orders list if order was created
+            setState(() {
+              // Update orders list
+            });
+          }
+        },
+        child: const Icon(Icons.add),
       ),
     );
   }
