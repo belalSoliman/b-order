@@ -18,7 +18,7 @@ class DateWidget extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Text(
           formattedDate,
-          style: Theme.of(context).textTheme.titleMedium,
+          style: Theme.of(context).textTheme.headlineLarge,
         ),
       ),
     );

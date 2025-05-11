@@ -1,77 +1,78 @@
 import 'package:flutter/material.dart';
 import 'package:border/core/theme/app_colors.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextStyles {
   // Light Theme Text Styles
-  static const TextStyle headlineLarge = TextStyle(
-    fontSize: 28,
+  static  TextStyle headlineLarge = TextStyle(
+    fontSize: 28.sp,
     fontWeight: FontWeight.bold,
     color: AppColors.onBackground,
   );
   
-  static const TextStyle headlineMedium = TextStyle(
-    fontSize: 24,
+  static  TextStyle headlineMedium = TextStyle(
+    fontSize: 24.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.onBackground,
   );
   
-  static const TextStyle headlineSmall = TextStyle(
-    fontSize: 20,
+  static  TextStyle headlineSmall = TextStyle(
+    fontSize: 20.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.onBackground,
   );
   
-  static const TextStyle bodyLarge = TextStyle(
-    fontSize: 16,
+  static  TextStyle bodyLarge = TextStyle(
+    fontSize: 16.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackground,
   );
   
-  static const TextStyle bodyMedium = TextStyle(
-    fontSize: 14,
+  static  TextStyle bodyMedium = TextStyle(
+    fontSize: 14.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackground,
   );
   
-  static const TextStyle bodySmall = TextStyle(
-    fontSize: 12,
+  static  TextStyle bodySmall = TextStyle(
+    fontSize: 12.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackground,
   );
   
   // Dark Theme Text Styles
-  static const TextStyle headlineLargeDark = TextStyle(
-    fontSize: 28,
+  static  TextStyle headlineLargeDark = TextStyle(
+    fontSize: 28.sp,
     fontWeight: FontWeight.bold,
     color: AppColors.onBackgroundDark,
   );
   
-  static const TextStyle headlineMediumDark = TextStyle(
+  static  TextStyle headlineMediumDark = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.w600,
     color: AppColors.onBackgroundDark,
   );
   
-  static const TextStyle headlineSmallDark = TextStyle(
-    fontSize: 20,
+  static  TextStyle headlineSmallDark = TextStyle(
+    fontSize: 20.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.onBackgroundDark,
   );
   
-  static const TextStyle bodyLargeDark = TextStyle(
-    fontSize: 16,
+  static  TextStyle bodyLargeDark = TextStyle(
+    fontSize: 16.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackgroundDark,
   );
   
-  static const TextStyle bodyMediumDark = TextStyle(
-    fontSize: 14,
+  static  TextStyle bodyMediumDark = TextStyle(
+    fontSize: 14.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackgroundDark,
   );
   
-  static const TextStyle bodySmallDark = TextStyle(
-    fontSize: 12,
+  static  TextStyle bodySmallDark = TextStyle(
+    fontSize: 12.sp,
     fontWeight: FontWeight.normal,
     color: AppColors.onBackgroundDark,
   );
