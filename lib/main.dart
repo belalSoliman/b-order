@@ -12,13 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ScreenUtilInit wraps your MaterialApp
     return ScreenUtilInit(
-      // Design size is based on your UI design's reference device
-      designSize: const Size(
-        375,
-        812,
-      ), // iPhone X dimensions (common reference)
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
@@ -27,7 +22,7 @@ class MyApp extends StatelessWidget {
           themeMode: ThemeMode.system,
           theme: AppTheme.lightTheme(),
           darkTheme: AppTheme.darkTheme(),
-          
+
           home: const DashbordScreen(),
         );
       },

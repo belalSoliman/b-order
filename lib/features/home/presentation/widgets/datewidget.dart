@@ -1,5 +1,6 @@
 // widgets that show the date
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 
 class DateWidget extends StatelessWidget {
@@ -15,7 +16,7 @@ class DateWidget extends StatelessWidget {
     return Card(
       elevation: 2.0,
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding:  EdgeInsets.all(16.0.r),
         child: Text(
           formattedDate,
           style: Theme.of(context).textTheme.headlineLarge,
